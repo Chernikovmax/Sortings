@@ -1,6 +1,8 @@
 const array = [24, 31, 15, 20, 52, 6];
 const array2 = [44, 55, 12, 42, 94, 18, 06, 67, 153, 30, 27, 152, 113, 11, 5, 169, 69, 8155, 12, 42, 94, 18, 06];
 
+// This code was implemented as class and do the Max Heap.
+
 class Heap {
   constructor(array) {
     this.arr = array;
@@ -16,13 +18,6 @@ class Heap {
       this._siftingMax(this.arr, 0, heapSize)
     }
     return this.arr;
-  }
-
-  _maxHeapCreation(arr) {
-    for (let i = Math.floor(arr.length/2); i >= 0; i--) {
-      this._siftingMax(arr, i, arr.length);
-    }
-    return arr;
   }
 
   _siftingMax(arr, index, heapSize) {
@@ -43,6 +38,13 @@ class Heap {
       this._siftingMax(arr, largestNum, heapSize)
     }
   }
+
+  _maxHeapCreation(arr) {
+    for (let i = Math.floor(arr.length/2); i >= 0; i--) {
+      this._siftingMax(arr, i, arr.length);
+    }
+    return arr;
+  }
 }
 
 const heap1 = new Heap(array);
@@ -50,6 +52,8 @@ console.log(heap1.heapSort());
 
 const heap2 = new Heap(array2);
 console.log(heap2.heapSort());
+
+// This code was implemented as functions and do the Min Heap.
 
 function heapSort(arr) {
   minHeapCreation(arr);
@@ -88,6 +92,3 @@ function siftingMin(arr, index, heapSize) {
     siftingMin(arr, lowerNum, heapSize)
   }
 }
-
-// console.log(heapSort(array));
-// console.log(heapSort(array2));
