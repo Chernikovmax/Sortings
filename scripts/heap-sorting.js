@@ -1,5 +1,5 @@
-const array = [24, 31, 15, 20, 52, 6];
-const array2 = [44, 55, 12, 42, 94, 18, 06, 67, 153, 30, 27, 152, 113, 11, 5, 169, 69, 8155, 12, 42, 94, 18, 06];
+const arr = [24, 31, 15, 20, 52, 6];
+const arr2 = [44, 55, 12, 42, 94, 18, 06, 67, 153, 30, 27, 152, 113, 11, 5, 169, 69, 8155, 12, 42, 94, 18, 06];
 
 // This code was implemented as class and do the Max Heap.
 
@@ -47,11 +47,11 @@ class Heap {
   }
 }
 
-const heap1 = new Heap(array);
-console.log(heap1.heapSort());
+const heap1 = new Heap(arr);
+console.log(`The result of HeapSort for the array [${arr}]: [${heap1.heapSort()}]`);
 
-const heap2 = new Heap(array2);
-console.log(heap2.heapSort());
+const heap2 = new Heap(arr2);
+console.log(`The result of HeapSort for the array [${arr2}]: [${heap2.heapSort()}]`);
 
 // This code was implemented as functions and do the Min Heap.
 
