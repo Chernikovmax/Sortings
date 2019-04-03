@@ -11,4 +11,4 @@ function quickSort(arr) {
   }
 }
 
-console.log(`The result of Quicksort for the array [${array}]: [${quickSort(array)}]`);
+console.log(`The result of Quick Sorting for the array [${array}]: [${quickSort(array)}]`);

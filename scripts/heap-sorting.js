@@ -48,10 +48,10 @@ class Heap {
 }
 
 const heap1 = new Heap(arr);
-console.log(`The result of HeapSort for the array [${arr}]: [${heap1.heapSort()}]`);
+console.log(`The result of Heap Sorting for the array [${arr}]: [${heap1.heapSort()}]`);
 
 const heap2 = new Heap(arr2);
-console.log(`The result of HeapSort for the array [${arr2}]: [${heap2.heapSort()}]`);
+console.log(`The result of Heap Sorting for the array [${arr2}]: [${heap2.heapSort()}]`);
 
 // This code was implemented as functions and do the Min Heap.
 
